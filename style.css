@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10px;
+    background-color: #222831;
+}
+
+.wrapper{
+    width: 400px;
+    background-color: #393e46;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px #393e46;
+}
+
+.wrapper h1{
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    font-weight: 500;
+    margin: 0px 20px;
+    padding: 20px 25px;
+    color: #fff;
+}
+
+.wrapper .content{
+    margin: 25px 25px 30px;
+}
+
+.content .word{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.word input{
+    height: 51px;
+    width: 50px;
+    margin: 4px;
+    color: #fff;
+    border: 1px solid #ccc;
+    background: none;
+    text-align: center;
+    border-radius: 10px;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.word input:first-child{
+    margin-left: 0;
+}
+
+.type-input{
+    z-index: -999;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.content .info{
+    margin: 20px 0px;
+}
+
+.info p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info p span{
+    border-bottom: 2px solid yellow;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .buttons .reset,
+.content .buttons .showhint{
+    width: 48%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    padding: 10px 0px;
+    font-size: 17px;
+    background-color: #ef6262;
+    border-radius: 5px;
+    transition: 300ms all;
+}
+
+.content .buttons .reset:hover,
+.content .buttons .showhint:hover{
+    background-color: #ef6262b7;
+}
